@@ -17,7 +17,7 @@ class Post extends Model {
               'id',
               'title',
               'body',
-              'date_created',
+              'created_at',
               [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = comment.post_id)')]
             ],
             include: [
@@ -41,7 +41,7 @@ Post.init(
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            primarykey: true,
+            primaryKey: true,
             autoIncrement: true
         },
         title: {
@@ -49,14 +49,17 @@ Post.init(
             allowNull: false
         },
         body: {
-            type: DataTypes.STRING,
-            allowNull: false
+            type: DataTypes.TEXT,
+            allowNull: false,
+            validate: {
+                len: [1]
+            }
         },
-        date_created: {
-            type: Date,
-            allowNull: false
+        // date_created: {
+        //     type: Date,
+        //     allowNull: false
             // default: 
-        },
+        // },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
