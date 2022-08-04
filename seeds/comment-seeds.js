@@ -19,7 +19,7 @@ const commentdata = [
   {
     comment_text: 'Love the shortcuts',
     user_id: 3,
-    post_id: 18
+    post_id: 8
   },
   {
     comment_text: 'Thanks, this helped me a lot.',
@@ -29,7 +29,7 @@ const commentdata = [
   {
     comment_text: 'Very ggreat post, appreciated.',
     user_id: 1,
-    post_id: 20
+    post_id: 2
   },
   {
     comment_text: 'Where did you find this?',
@@ -44,17 +44,17 @@ const commentdata = [
   {
     comment_text: 'Thanks.',
     user_id: 6,
-    post_id: 12
+    post_id: 2
   },
   {
     comment_text: 'Really useful post.',
     user_id: 6,
-    post_id: 20
+    post_id: 7
   },
   {
     comment_text: 'Man this helped me out of a jam, thanks@!',
     user_id: 3,
-    post_id: 14
+    post_id: 4
   },
   {
     comment_text: 'Send more posts!',
@@ -71,7 +71,7 @@ const commentdata = [
     comment_text:
       'appreciate the post.',
     user_id: 5,
-    post_id: 14
+    post_id: 7
   },
   {
     comment_text: 'great post.',
@@ -87,24 +87,24 @@ const commentdata = [
     comment_text:
       'I found this really helpful, thank you.',
     user_id: 2,
-    post_id: 20
+    post_id: 5
   },
   {
     comment_text: 'Great postm, thanks for sharing',
     user_id: 4,
-    post_id: 11
+    post_id: 3
   },
   {
     comment_text:
       'Nice! really useful.',
     user_id: 5,
-    post_id: 13
+    post_id: 6
   },
   {
     comment_text:
       'Can I use that anywhere?.',
     user_id: 9,
-    post_id: 16
+    post_id: 8
   },
   {
     comment_text: 'Amazing, thanks for sharing.',
@@ -114,7 +114,7 @@ const commentdata = [
   {
     comment_text: 'cool!.',
     user_id: 4,
-    post_id: 10
+    post_id: 1
   },
   {
     comment_text: 'I am so smart S-M-R-T.',
@@ -125,13 +125,13 @@ const commentdata = [
     comment_text:
       'Thanks Leela',
     user_id: 8,
-    post_id: 10
+    post_id: 7
   },
   {
     comment_text:
       'Thanks for sharing this with the community',
     user_id: 1,
-    post_id: 15
+    post_id: 5
   },
   {
     comment_text: 'Great info, super useful.',
@@ -141,22 +141,22 @@ const commentdata = [
   {
     comment_text: 'Thanks, really helpful',
     user_id: 1,
-    post_id: 15
+    post_id: 5
   },
   {
     comment_text: 'Do I have to pay for this service?',
     user_id: 4,
-    post_id: 16
+    post_id: 6
   },
   {
     comment_text: 'Spelling errors all over man.',
     user_id: 4,
-    post_id: 18
+    post_id: 8
   },
   {
     comment_text: 'Useful.',
     user_id: 4,
-    post_id: 10
+    post_id: 9
   },
   {
     comment_text: 'liked!.',
@@ -171,7 +171,7 @@ const commentdata = [
   {
     comment_text: 'Thanks again.',
     user_id: 3,
-    post_id: 19
+    post_id: 8
   },
   {
     comment_text: 'Is that addition or subtraction methodology?',
@@ -181,7 +181,7 @@ const commentdata = [
   {
     comment_text: 'can you show an example?.',
     user_id: 10,
-    post_id: 14
+    post_id: 4
   },
   {
     comment_text: 'Can you add any more?',
