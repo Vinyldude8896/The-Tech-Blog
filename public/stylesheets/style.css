@@ -22,3 +22,7 @@
 .card-title {
     font-weight: bolder;
 }
+
+.lists {
+    list-style: none;
+}
