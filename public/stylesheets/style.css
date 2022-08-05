@@ -1,0 +1,24 @@
+* {
+    font-family: Roboto;
+}
+
+.card-margins {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.header-text {
+    font-size: 25px;
+}
+
+.header-big {
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.card-title {
+    font-weight: bolder;
+}
