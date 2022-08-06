@@ -9,6 +9,9 @@
     <blockquote class="blockquote mb-0">
       <p>{{body}}</p>
       <footer class="blockquote-footer">{{created_at}} <cite title="Source Title"> by {{user.username}}</cite></footer>
+        <div class="meta">
+    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </div>
     </blockquote>
   </div>
 </div>
