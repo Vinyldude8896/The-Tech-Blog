@@ -26,3 +26,19 @@
 .lists {
     list-style: none;
 }
+
+.form-layout {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.form-p {
+    color:black;
+}
+
+.form-layout button {
+    margin-left: 125px;
+}
+
