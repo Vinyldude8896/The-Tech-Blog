@@ -1,30 +1,11 @@
-<section>
-  <h2 class="create-post">Create New Post</h2>
 
-<form class="col-sm-6 form-layout create-post-form">
-  <div class="form-group row">
-    <label for="add-tiltle" class="col-sm-2 col-form-label bg-secondary">Title</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="post-tile" placeholder="tilte">
-    </div>
-  </div>
-    <div class="form-group row">
-    <label for="add-body" class="col-sm-2 col-form-label bg-secondary">body</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="post-body" placeholder="body">
-    </div>
-  </div>
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Create Post</button>
-    </div>
-  </div>
-</form>
-</section>
 
 {{#if posts.length}}
 <section>
-  <h2 class="col-lg-11 col-form-label dashboard text-center">Your Posts</h2>
+    <div class="col-lg-12">
+      <h2 class="col-lg-12 col-form-label dashboard text-center">Your Posts</h2> 
+    </div>
+     <button type="submit" class="btn btn-primary create-post-button align-center">Create Post</button>
   <ul>
     {{#each posts as |post|}}
     <li class="lists">
@@ -34,6 +15,13 @@
     {{/each}}
   </ul>
 </section>
+{{else}}
+ <h2 class="col-lg-12 col-form-label dashboard text-center">You don't have any posts yet</h2>
+   <div class="col-lg-12 col-form-label dashboard text-center">
+    <div class="col-lg-12">
+      <button type="submit" class="btn btn-primary align-center">Create Post</button>
+    </div>
 {{/if}}
+
 
 <script src="/javascript/add-post.js"></script>
