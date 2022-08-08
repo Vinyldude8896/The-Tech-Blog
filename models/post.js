@@ -77,3 +77,4 @@ Post.init(
 );
 
 module.exports = Post;
+// adding comment
