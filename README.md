@@ -35,10 +35,10 @@ Multiple days were spent testing to ensure proper data was being written to the 
     - additional instructions 
     I can be contacted by phone as well, but prefer email contact first.
 
-### Image of example readme.md
+### Images of example readme.md
 
 <img src="./tech_blog_screenshot_1.png" alt="Getting started">
-<img src="./tech_blog_screenshot_2.png" alt="Getting started">
+<img src="./tech_blog_screenshot__2.png" alt="Getting started">
 
 
 
