@@ -21,7 +21,8 @@
 - [Questions](#questions)
 
 ### Installation
-Application to be deployed live using heroku 
+Live application is at this link :
+https://immense-cliffs-94479.herokuapp.com/
 
 
 
