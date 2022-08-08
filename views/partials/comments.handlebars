@@ -1,12 +1,16 @@
-<div class="comments">
+<article class="post">
+<div class= "card-margins">
+<div class="comments card">
   {{#each this}}
   <section class="comment">
-    <div class="meta">
+    <div class="meta card-header bg-secondary card-title">
       {{user.username}} on {{format_date created_at}}
     </div>
-    <div class="text">
+    <div class="text card-body">
       {{comment_text}}
     </div>
   </section>
   {{/each}}
 </div>
+</div>
+</article>

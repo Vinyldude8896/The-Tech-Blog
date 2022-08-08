@@ -61,4 +61,9 @@
 
 .create-post-button {
     margin-left: 115px;
+    margin-top: 25px;
+}
+
+.add-comment-button {
+    margin-left: 45px;
 }

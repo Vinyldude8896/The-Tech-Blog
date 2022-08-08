@@ -18,12 +18,12 @@
       <li class="nav-item active">
         <a class="nav-link header-text" href="/">Home </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link header-text" href="/dashboard">Dashboard</a>
       </li>
+      <li class="nav-item"></li>
+       <a class="nav-link header-text" href="/dashboard">Dashboard</a>
       {{#if loggedIn}}
       <li class="nav-item">
-       <button id="logout" class="btn-no-style">logout</button>
+       <a id="logout" class="nav-link header-text">logout</a>
       </li>
       {{else}}
         <li class="nav-item">
