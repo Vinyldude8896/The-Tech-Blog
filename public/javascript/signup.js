@@ -1,3 +1,7 @@
+
+// this function will take the values from the username, email and password inputs
+// then send those values in a POST request to add a new user 
+// if successfull will replace location with the dashboard
 async function signupFormHandler(event) {
     event.preventDefault();
   

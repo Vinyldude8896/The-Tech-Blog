@@ -1,3 +1,5 @@
+// on click of the logout in nav bar this function will lof the user out
+
 async function logout() {
     const response = await fetch('/api/users/logout', {
       method: 'post',

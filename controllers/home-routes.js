@@ -2,7 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const {Post, User, Comment} = require('../models');
 
-// get all posts for homepage
+// this route will get all the posts for the homepage and render the hompage handlebars
 router.get('/', (req, res) => {
     console.log('============================');
     Post.findAll({
@@ -32,6 +32,7 @@ router.get('/', (req, res) => {
 
         res.render('homepage', {
             posts,
+            loggedIn: req.session.loggedIn
         });
     })
     .catch(err => {
@@ -40,7 +41,7 @@ router.get('/', (req, res) => {
     });
 });
 
-// get single post
+//  If you click on a single post, this will get the single post attributes and render the single-post handlebars
 router.get('/post/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -86,7 +87,7 @@ router.get('/post/:id', (req, res) => {
     });
 });
 
-// get single post
+// This route will find a single post and render the edit-post handlebars
 router.get('/edit/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -133,7 +134,7 @@ router.get('/edit/:id', (req, res) => {
 });
 
 
-
+// this route will reder the login handlebars
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
@@ -143,6 +144,7 @@ router.get('/login', (req, res) => {
     res.render('login');
   });
 
+  // this route will render the signup handlebars
   router.get('/signup', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
@@ -152,9 +154,12 @@ router.get('/login', (req, res) => {
     res.render('signup');
   });
 
+  // this route will reder the create-post handlebars
   router.get('/create-post', (req, res) => {
     if (req.session.loggedIn) {
-        res.render('create-post')
+        res.render('create-post', {
+          loggedIn: req.session.loggedIn
+        });
       return;
     } else {
     res.redirect('/');

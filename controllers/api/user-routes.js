@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const { User, Post, Comment, Vote } = require('../../models');
 
+
+// this is for the login page, where we will search for a user pased on the username and password given
+// then we will create a new session for the user
 router.post('/login', (req, res) => {
     // expects {username: 'GraceJones', password: 'password123'}
     User.findOne({
@@ -30,6 +33,8 @@ router.post('/login', (req, res) => {
     });
   });
   
+
+  // this route is used for logging the user out and will destroy the session
   router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {
       req.session.destroy(() => {
@@ -41,6 +46,9 @@ router.post('/login', (req, res) => {
     }
   });
 
+
+  // this route is used for signing up to the site. it requires a username, email and password.
+  // then will save the session for the user
   router.post('/signup', (req, res) => {
     // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
     User.create({

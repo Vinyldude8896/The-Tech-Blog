@@ -1,3 +1,6 @@
+//This function will  take the value of the title input and the body input 
+// then send a PUT request to update the post with title and body
+
 async function editFormHandler(event) {
     event.preventDefault();
   

@@ -1,3 +1,6 @@
+//This function will take the post id from the window location
+// then send a delete request to delete the comment with post_id and comment_text
+
 async function deleteFormHandler(event) {
     event.preventDefault();
   

@@ -3,6 +3,8 @@ const sequelize = require('../../config/connection');
 const { Post, User, Comment, Vote } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+
+// this route will create a post requiring a title and body and then taking the user.id from the session
 router.post('/', withAuth, (req, res) => {
     console.log(req.body);
     // expects {title: 'Taskmaster goes public!', body: 'This is an awesome site', user_id: 1}
@@ -19,6 +21,8 @@ router.post('/', withAuth, (req, res) => {
       });
   });
 
+
+  // this route is used to update a post and requires a title and body
   router.put('/:id', withAuth, (req, res) => {
     Post.update(
       {
@@ -45,6 +49,8 @@ router.post('/', withAuth, (req, res) => {
       });
   });
   
+
+  // this route is to delete a post where the ID matches
   router.delete('/:id', withAuth, (req, res) => {
     console.log('id', req.params.id);
     Post.destroy({

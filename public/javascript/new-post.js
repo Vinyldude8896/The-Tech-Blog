@@ -1,3 +1,6 @@
+// this function is for addinng a new post. It will take the values from the title and body inouts
+// then send a POST request to add the new post and then replace location with the dashboard
+
 async function newPostHandler(event) {
     event.preventDefault();
   

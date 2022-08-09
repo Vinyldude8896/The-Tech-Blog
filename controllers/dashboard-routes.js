@@ -3,7 +3,8 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-// get all posts for dashboard
+// This route will get posts for the dashboard display that match the user ID that has logged in
+// then renders the dashboard handlebar
 router.get('/', withAuth, (req, res) => {
     console.log(req.session);
     console.log('======================');
@@ -42,6 +43,8 @@ router.get('/', withAuth, (req, res) => {
       });
   });
   
+
+  // this route is for when we click to edit a post from the dashboard
   router.get('/edit/:id', withAuth, (req, res) => {
     Post.findByPk(req.params.id, {
       attributes: [
@@ -82,7 +85,7 @@ router.get('/', withAuth, (req, res) => {
       });
   });
   
-  // get single post
+  // this route will get the post that you click on and render the edit-post handlebar
 router.get('/post/:id', (req, res) => {
   Post.findOne({
     where: {

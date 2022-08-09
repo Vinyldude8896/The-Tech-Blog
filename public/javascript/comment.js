@@ -1,3 +1,7 @@
+
+//This function will  take the value if the comment textarea and the post id from the windowlocation
+// then send a post request to add the comment with post_id and comment_text
+
 async function commentFormHandler(event) {
     event.preventDefault();
   

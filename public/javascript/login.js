@@ -1,3 +1,6 @@
+
+// this function will take the username value from the input box and the password value from teh input box
+// then will send a POST method and if ok replace location with dashboard
 async function loginFormHandler(event) {
     event.preventDefault();
 

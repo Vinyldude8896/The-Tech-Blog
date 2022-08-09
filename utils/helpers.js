@@ -1,3 +1,5 @@
+/// exporting functions to format date, format_url, and format_plural
+
 module.exports = {
   format_date: date => {
     return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(

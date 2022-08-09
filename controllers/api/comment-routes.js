@@ -2,6 +2,8 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+
+// this route will get all comments 
 router.get('/', (req, res) => {
   Comment.findAll()
     .then(dbCommentData => res.json(dbCommentData))
@@ -11,6 +13,8 @@ router.get('/', (req, res) => {
     });
 });
 
+
+// this route will create a comment and require comment_text, and will use the user_id from the session
 router.post('/', withAuth, (req, res) => {
   // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
   Comment.create({
@@ -25,6 +29,7 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
+// this route will delete a comment by id
 router.delete('/:id', withAuth, (req, res) => {
   Comment.destroy({
     where: {

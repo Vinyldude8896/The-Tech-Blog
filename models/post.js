@@ -55,11 +55,6 @@ Post.init(
                 len: [1]
             }
         },
-        // date_created: {
-        //     type: Date,
-        //     allowNull: false
-            // default: 
-        // },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
